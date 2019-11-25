@@ -1,16 +1,44 @@
 import React from "react";
 import styled from "styled-components";
 
+const Card = styled.div `
+    border: 4px dotted black;
+    border-radius: 10%;
+    width: 280px;
+    margin-left: 43%;
+    margin-bottom: 2%;
+
+
+`
+const CardTitle = styled.h1 `
+    background-color: #1E90FF;
+    padding: 2%;
+    border-radius: 15%;
+    border: 1px solid #1E90FF;
+`
+const CardText = styled.p `
+    color: #F1E0F1;
+    font-weight: 600;
+    background-color: #3498DB;
+    padding: 7%;
+    border: 1px solid  #3498DB;
+    border-radius: 15%;
+
+`
+
+
 function CharCard(props) {
     
     return (
 
-        <div className = "card">
-            <h1 className = "card-title"> Name: {props.name} </h1>
-            <p className = "card-text"> gender: {props.gender} </p>
-            <p className = "card-text"> height: {props.height} </p>
+        <Card>
+            <CardTitle className = "card-title"> Name: {props.name} </CardTitle>
+            <CardText className = "card-text"> gender: {props.gender} </CardText>
+            <CardText className = "card-text"> height: {props.height} </CardText>
+            <CardText className = "card-text"> hair color: {props.hair_color} </CardText>
+            <CardText className = "card-text"> skin color: {props.skin_color} </CardText>
             
-        </div>
+        </Card>
     )
 }
 

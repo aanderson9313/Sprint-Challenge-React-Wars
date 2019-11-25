@@ -1,0 +1,16 @@
+.Card {
+    display: flex;
+    flex-direction: column;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: 1px dotted red;
+  }
+
+  .CardTitle{
+    background-color: #1E90FF;
+    padding: 2%; 
+  }
+
+  .CardText {
+    color: #34415E;;
+  }
+    

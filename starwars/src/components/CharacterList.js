@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import styled from "styled-components";
 import CharCard from "./CharCard";
 import axios from "axios";
 
@@ -30,6 +29,7 @@ function CharacterList() {
                     gender = {Char.gender}
                     height = {Char.height}
                     hair_color = {Char.hair_color}
+                    skin_color = {Char.skin_color}
                     />
                 )
             })}

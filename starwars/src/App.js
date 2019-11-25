@@ -1,7 +1,12 @@
 import React from 'react';
 import './App.css';
-import CharacterList from "./components/CharacterList"
+import CharacterList from "./components/CharacterList";
+import styled from "styled-components";
 
+const Header = styled.h1 `
+  font-size: 5rem;
+
+`
 
 
 
@@ -16,8 +21,10 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">React Wars</h1>
-      <CharacterList />
+     
+       <Header className="Header">React Wars</Header>
+       <CharacterList />
+      
     </div>
   );
 }
