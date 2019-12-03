@@ -3,6 +3,10 @@ import './App.css';
 import CharacterList from "./components/CharacterList";
 import styled from "styled-components";
 
+const App1 = styled.div`
+  background-image: url(/static/media/sw-bg.dff75a1f.jpg);
+`
+
 const Header = styled.h1 `
   font-size: 5rem;
 
@@ -20,12 +24,15 @@ const App = () => {
   // sync up with, if any.
 
   return (
-    <div className="App">
+    <App1 className ="App1">
+      <div className = "Form">
+        <form></form>
+      </div>
      
-       <Header className="Header">React Wars</Header>
+       <Header className = "Header">React Wars</Header>
        <CharacterList />
       
-    </div>
+    </App1>
   );
 }
 

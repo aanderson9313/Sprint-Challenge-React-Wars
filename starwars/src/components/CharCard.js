@@ -5,10 +5,9 @@ const Card = styled.div `
     border: 4px dotted black;
     border-radius: 10%;
     width: 280px;
+    height: auto;
     margin-left: 43%;
     margin-bottom: 2%;
-
-
 `
 const CardTitle = styled.h1 `
     background-color: #1E90FF;
@@ -31,7 +30,7 @@ function CharCard(props) {
     
     return (
 
-        <Card>
+        <Card className = "card">
             <CardTitle className = "card-title"> Name: {props.name} </CardTitle>
             <CardText className = "card-text"> gender: {props.gender} </CardText>
             <CardText className = "card-text"> height: {props.height} </CardText>
