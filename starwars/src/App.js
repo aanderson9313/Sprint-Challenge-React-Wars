@@ -4,8 +4,9 @@ import CharacterList from "./components/CharacterList";
 import styled from "styled-components";
 
 const App1 = styled.div`
-  background-image: url(/static/media/sw-bg.dff75a1f.jpg);
-`
+  background-image: url(https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+  background-size: auto;
+  `
 
 const Header = styled.h1 `
   font-size: 5rem;

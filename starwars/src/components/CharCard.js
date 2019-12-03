@@ -8,6 +8,8 @@ const Card = styled.div `
     height: auto;
     margin-left: 43%;
     margin-bottom: 2%;
+    background-image: url(/static/media/sw-bg.dff75a1f.jpg);
+    background-size: cover;
 `
 const CardTitle = styled.h1 `
     background-color: #1E90FF;
